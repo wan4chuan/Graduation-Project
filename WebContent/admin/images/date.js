@@ -1,0 +1,12 @@
+var dt=new Date();
+var ww=dt.getDay();
+if (ww==0) ww="星期日"; 
+if (ww==1) ww="星期一";  
+if (ww==2) ww="星期二"; 
+if (ww==3) ww="星期三"; 
+if (ww==4) ww="星期四"; 
+if (ww==5) ww="星期五"; 
+if (ww==6) ww="星期六"; 
+ww=ww; 
+now_time=dt.toLocaleDateString() + " " + dt.toLocaleTimeString();
+document.write("当前时间："+now_time+" "+ww);
